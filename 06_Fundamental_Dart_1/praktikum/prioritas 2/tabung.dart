@@ -1,7 +1,7 @@
 import 'dart:io';
 import 'dart:math';
 
-void main(List<String> args) {
+void main() {
   stdout.write('Masukan nilai jari - jari : ');
   int jari = int.parse(stdin.readLineSync()!);
 

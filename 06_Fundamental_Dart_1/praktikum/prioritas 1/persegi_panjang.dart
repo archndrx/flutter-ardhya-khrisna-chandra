@@ -1,8 +1,10 @@
 import 'dart:io';
 
-void main(List<String> args) {
+void main() {
   stdout.write('Masukan nilai panjang : ');
   int panjang = int.parse(stdin.readLineSync()!);
+
+  // int nama_variabel = int.parse(stdin.readLineSync()!);
 
   stdout.write('Masukan nilai lebar : ');
   int lebar = int.parse(stdin.readLineSync()!);
