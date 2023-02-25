@@ -3,13 +3,14 @@ import 'dart:io';
 void main(List<String> args) {
   stdout.write('Masukkan bilangan: ');
   int bilangan = int.parse(stdin.readLineSync()!);
+  int hasil = faktorial(bilangan);
+  print('Faktorial dari $bilangan adalah $hasil');
+}
 
-  stdout.write('Faktor $bilangan adalah: ');
-  int i = 1;
-  while (i < bilangan) {
-    if (bilangan % i == 0) {
-      stdout.write('\n$i');
-    }
-    i++;
+int faktorial(int angka) {
+  if (angka == 0) {
+    return angka = 1;
+  } else {
+    return angka * faktorial(angka - 1);
   }
 }
