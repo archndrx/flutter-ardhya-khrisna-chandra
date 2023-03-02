@@ -2,10 +2,10 @@ Future<List> soal(List data, int multiplier) async {
   List listBaru = [];
   for (int num in data) {
     listBaru.add(num * multiplier);
+    await Future.delayed(
+      Duration(seconds: 2),
+    );
   }
-  await Future.delayed(
-    Duration(seconds: 2),
-  );
   return listBaru;
 }
 
