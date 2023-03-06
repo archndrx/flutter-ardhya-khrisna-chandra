@@ -28,11 +28,9 @@ class Mobil {
   void tambahMuatan(Hewan hewan) {
     if (hitungBerat() + hewan.berat <= kapasitas) {
       muatan.add(hewan);
-      print(
-          "Berat hewan ${hewan.berat} kg berhasil ditambahkan ke dalam muatan");
+      print("Berat hewan ${hewan.berat} kg berhasil ditambahkan");
     } else {
-      print(
-          "Kapasitas mobil tidak cukup untuk menambahkan hewan berat ${hewan.berat} kg");
+      print("Kapasitas mobil tidak cukup untuk memuat berat ${hewan.berat} kg");
     }
   }
 
