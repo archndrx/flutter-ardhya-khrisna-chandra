@@ -1,0 +1,3 @@
+1. Dalam penulisan OOP itu sendiri terdiri dari berbagai macam method seperti Constructor, Inheritance, Overriding, Interface, Abstract Class, Polymorphism, dan Generics
+2. Penggunaan Extends dan Implements diartikan untuk mewarisi sifat ataupun interface dari kelas induk.
+3. Method Overriding digunakan untuk menulis ulang method yang sudah ada pada kelas induk sehingga membuat method baru pada kelas anak.
