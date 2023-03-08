@@ -8,10 +8,8 @@ void main(List<String> args) {
   print('Nilai FPB dari ${fpb.x} dan ${fpb.y} adalah ${fpb.hasil()}');
 }
 
-class Matematika {
-  hasil() {
-    print('Ini hasil Matematika');
-  }
+abstract class Matematika {
+  hasil() {}
 }
 
 class KPK implements Matematika {
