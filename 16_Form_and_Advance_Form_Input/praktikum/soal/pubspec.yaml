@@ -1,0 +1,29 @@
+name: soal
+description: A new Flutter project.
+publish_to: 'none'
+version: 0.1.0
+
+# environment:
+#   sdk: '>=2.19.2 <3.0.0'
+
+environment:
+  sdk: '>=2.12.0 <3.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+  intl: ^0.18.0
+  flutter_colorpicker: ^1.0.3
+  open_file: ^3.2.1
+  file_picker: ^5.2.6
+
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+dependency_overrides:
+  ffi: ^2.0.1
+
+flutter:
+  uses-material-design: true
