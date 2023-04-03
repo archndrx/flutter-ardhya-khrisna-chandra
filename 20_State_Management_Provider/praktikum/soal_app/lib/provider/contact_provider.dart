@@ -19,13 +19,13 @@ class ContactProvider extends ChangeNotifier {
     notifyListeners();
   }
 
-  void updateContact(int index, Contact updatedContact) {
-    _listContact[index] = updatedContact;
-    notifyListeners();
-  }
+  // void updateContact(int index, Contact updatedContact) {
+  //   _listContact[index] = updatedContact;
+  //   notifyListeners();
+  // }
 
-  void deleteContact(int index) {
-    _listContact.removeAt(index);
-    notifyListeners();
-  }
+  // void deleteContact(int index) {
+  //   _listContact.removeAt(index);
+  //   notifyListeners();
+  // }
 }

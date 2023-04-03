@@ -15,6 +15,12 @@ class GalleryPage extends StatelessWidget {
         appBar: AppBar(
           title: Text("My Gallery"),
           centerTitle: true,
+          leading: IconButton(
+            icon: Icon(Icons.arrow_back),
+            onPressed: () {
+              Navigator.pushNamed(context, '/');
+            },
+          ),
         ),
         body: GridView.builder(
             padding: EdgeInsets.all(16),

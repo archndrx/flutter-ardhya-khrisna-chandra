@@ -19,7 +19,7 @@ class ImagePage extends StatelessWidget {
           leading: IconButton(
             icon: Icon(Icons.arrow_back),
             onPressed: () {
-              Navigator.pop(context);
+              Navigator.pushNamed(context, '/gallery');
             },
           ),
         ),
