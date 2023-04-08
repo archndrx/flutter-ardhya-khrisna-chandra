@@ -219,7 +219,7 @@ class _CreateContactState extends State<CreateContact> {
                                 fontSize: 14,
                                 fontWeight: FontWeight.w400,
                               ),
-                              hintText: '08 ...',
+                              hintText: '62 ...',
                               hintStyle: TextStyle(
                                 color: Color(0xFF49454F),
                               ),
@@ -236,8 +236,8 @@ class _CreateContactState extends State<CreateContact> {
                             if (value.length < 8 || value.length > 15) {
                               return 'Panjang nomor telepon harus 8-15 digit';
                             }
-                            if (!value.startsWith('0')) {
-                              return 'Nomor telepon harus dimulai dengan angka 0';
+                            if (!value.startsWith('62')) {
+                              return 'Nomor telepon harus dimulai dengan angka 62';
                             }
                             return null;
                           },
@@ -447,7 +447,7 @@ class _CreateContactState extends State<CreateContact> {
                         if (_keyNama.currentState!.validate() &&
                             _keyNomor.currentState!.validate()) {
                           final name = namaController.text;
-                          final number = nomorController.text;
+                          final number = int.parse(nomorController.text);
                           final date = dateController.text;
                           final file = fileController.text;
                           final color = currentColor.value;

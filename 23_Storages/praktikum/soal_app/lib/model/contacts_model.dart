@@ -3,7 +3,7 @@ import 'dart:ui';
 class Contact {
   late int? id;
   late String name;
-  late String number;
+  late int number;
   late String date;
   late String color;
   late String file;

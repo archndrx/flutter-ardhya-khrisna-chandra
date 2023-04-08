@@ -82,7 +82,7 @@ class _UpdatePageState extends State<UpdatePage> {
                 final updatedContact = Contact(
                   id: widget.contact.id,
                   name: _nameController.text,
-                  number: _numberController.text,
+                  number: int.parse(_numberController.text),
                   date: _dateController.text,
                   color: widget.contact.color,
                   file: widget.contact.file,
