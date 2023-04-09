@@ -9,7 +9,8 @@ class AssetProvider extends ChangeNotifier {
       final dio = Dio();
       final response = await dio
           .get('https://api.dicebear.com/6.x/pixel-art/svg?seed=$text');
-      imageUrl = response.data.toString();
+      imageUrl = response.data;
+
       notifyListeners();
     } catch (e) {
       print(e);
