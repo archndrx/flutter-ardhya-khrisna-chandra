@@ -43,6 +43,7 @@ class HomePage extends StatelessWidget {
                       final assetProvider =
                           Provider.of<AssetProvider>(context, listen: false);
                       assetProvider.fetchImage(_textController.text);
+                      _textController.clear();
                     },
                     child: Text('Generate'),
                   ),
