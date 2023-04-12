@@ -1,5 +1,5 @@
 import 'package:flutter/foundation.dart';
-import 'package:soal_app/viewmodel/helper/database_helper.dart';
+import 'package:soal_app/model/helper/database_helper.dart';
 import 'package:soal_app/model/contacts_model.dart';
 
 class ContactProvider extends ChangeNotifier {
