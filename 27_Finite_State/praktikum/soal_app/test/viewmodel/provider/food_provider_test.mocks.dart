@@ -3,11 +3,12 @@
 // Do not manually edit this file.
 
 // ignore_for_file: no_leading_underscores_for_library_prefixes
-import 'dart:async' as _i4;
-import 'dart:ui' as _i5;
+import 'dart:async' as _i5;
+import 'dart:ui' as _i6;
 
+import 'package:dio/dio.dart' as _i3;
 import 'package:mockito/mockito.dart' as _i1;
-import 'package:soal_app/model/api/food_api.dart' as _i3;
+import 'package:soal_app/model/api/food_api.dart' as _i4;
 import 'package:soal_app/viewmodel/provider/food_provider.dart' as _i2;
 
 // ignore_for_file: type=lint
@@ -30,26 +31,34 @@ class MockFoodProvider extends _i1.Mock implements _i2.FoodProvider {
   }
 
   @override
-  List<_i3.FoodApi> get foods => (super.noSuchMethod(
+  set dio(_i3.Dio? dio) => super.noSuchMethod(
+        Invocation.setter(
+          #dio,
+          dio,
+        ),
+        returnValueForMissingStub: null,
+      );
+  @override
+  List<_i4.FoodApi> get foods => (super.noSuchMethod(
         Invocation.getter(#foods),
-        returnValue: <_i3.FoodApi>[],
-      ) as List<_i3.FoodApi>);
+        returnValue: <_i4.FoodApi>[],
+      ) as List<_i4.FoodApi>);
   @override
   bool get hasListeners => (super.noSuchMethod(
         Invocation.getter(#hasListeners),
         returnValue: false,
       ) as bool);
   @override
-  _i4.Future<void> fetchData() => (super.noSuchMethod(
+  _i5.Future<void> fetchData() => (super.noSuchMethod(
         Invocation.method(
           #fetchData,
           [],
         ),
-        returnValue: _i4.Future<void>.value(),
-        returnValueForMissingStub: _i4.Future<void>.value(),
-      ) as _i4.Future<void>);
+        returnValue: _i5.Future<void>.value(),
+        returnValueForMissingStub: _i5.Future<void>.value(),
+      ) as _i5.Future<void>);
   @override
-  void addListener(_i5.VoidCallback? listener) => super.noSuchMethod(
+  void addListener(_i6.VoidCallback? listener) => super.noSuchMethod(
         Invocation.method(
           #addListener,
           [listener],
@@ -57,7 +66,7 @@ class MockFoodProvider extends _i1.Mock implements _i2.FoodProvider {
         returnValueForMissingStub: null,
       );
   @override
-  void removeListener(_i5.VoidCallback? listener) => super.noSuchMethod(
+  void removeListener(_i6.VoidCallback? listener) => super.noSuchMethod(
         Invocation.method(
           #removeListener,
           [listener],

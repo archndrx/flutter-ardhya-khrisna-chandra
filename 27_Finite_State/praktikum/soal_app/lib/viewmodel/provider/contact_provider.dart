@@ -1,9 +1,17 @@
 import 'package:flutter/foundation.dart';
+import 'package:soal_app/core/enums/state.dart';
 import 'package:soal_app/model/helper/database_helper.dart';
 import 'package:soal_app/model/contacts_model.dart';
 
 class ContactProvider extends ChangeNotifier {
   List<Contact> _listContact = [];
+
+  ContactViewState state = ContactViewState.none;
+  changeState(ContactViewState s) {
+    state = s;
+    notifyListeners();
+  }
+
   final DatabaseHelper _dbHelper;
 
   List<Contact> get contacts => _listContact;
@@ -31,7 +39,7 @@ class ContactProvider extends ChangeNotifier {
     _getAllContacts();
   }
 
-  void deleteContacts(int id) async {
+  Future<void> deleteContact(int id) async {
     await _dbHelper.deleteContact(id);
     _getAllContacts();
   }
